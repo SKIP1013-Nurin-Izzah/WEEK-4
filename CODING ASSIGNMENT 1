@@ -1,0 +1,40 @@
+package assignment;
+
+import java.util.Scanner;
+
+public class Assignment1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*Say your brother wants to buy a used car for $5,000 and has only $2,000 for the down payment.
+He hits you up for a loan for the remaining $3,000.
+If the length of the loan is five years and he’s paying you simple interest of 3.5 percent per year to borrow the additional $3,000,
+Calculate the sum of interest, monthly payment, and a total of payment.*/
+		
+		double sumofinterest, monthlypayment, totalpayment, yearlyInterestRate, loanamount;
+		int numberofYear;
+		
+		
+		Scanner scan = new Scanner (System.in);
+		
+		System.out.println("Enter the yearly interest rate: ");
+		yearlyInterestRate=scan.nextDouble();
+		
+		System.out.println("Enter the number of year as an integer: ");
+		numberofYear=scan.nextInt();
+		
+		System.out.println("Enter the loan amount: ");
+		loanamount=scan.nextDouble();
+		
+		sumofinterest= loanamount*numberofYear*(yearlyInterestRate/100);
+		System.out.printf("The sum of interest is: %.2f \n",sumofinterest);
+		
+		monthlypayment=(yearlyInterestRate/100)*loanamount;
+		System.out.printf("The monthly payment is: %.2f",monthlypayment);
+		
+		
+
+	}
+
+}

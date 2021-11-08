@@ -19,7 +19,8 @@ public class Assignment2 {
 		 *         display the total price before discount, discount received and the amount that
 		 *          needs to be paid.*/
 		 
-		double totalprice, itemprice, totalpriceitem1, totalpriceitem2, totalpriceitem3, discountprice, pricetopaid;
+		double totalprice, itemprice, totalpriceitem1, totalpriceitem2, totalpriceitem3, discountprice1, 
+		discountprice2, pricetopaid, discount1, discount2, amounttopay;
 		int numberofitem, quantity;
 		
 		Scanner scan = new Scanner (System.in);
@@ -64,17 +65,18 @@ public class Assignment2 {
 		System.out.println("Total price of the items is: "+totalprice);
 		
 		if (totalprice>=100) {
-			discountprice = totalprice - (totalprice*(20/100));
-			System.out.println("The discount received: " +discountprice);
+			discountprice1 = totalprice*0.2;
+			discount1 = totalprice - discountprice1; 
+			System.out.printf("The discount received: %.2f" ,discount1); }
 		
-		if (totalprice>100) {
-			discountprice = totalprice - (totalprice*(10/100));
-			System.out.println("The discount received: "+discountprice);
+			else {
+			discountprice2 = totalprice*0.9;
+			discount2 = totalprice - discountprice2;
+			System.out.printf("The discount received: %.2f",discount2); 
 			
+		amounttopay = totalprice - discount2;
+		System.out.printf("\nThe amount that needs to be paid: %.2f " ,amounttopay); }
 		
-			}
 		}
 
 	}
-
-}

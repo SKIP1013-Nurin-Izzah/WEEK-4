@@ -1,0 +1,80 @@
+package assignment;
+
+import java.util.Scanner;
+
+public class Assignment2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*You are required to calculate the total price that needs to be paid by a customer
+		 *  in C_MARTS shopping complex. The program should ask how many items that the 
+		 *  customer buys (the maximum number of items is 3).
+		 *   Based on the number of items, the program will ask the quantity and price of
+		 *    each item. Each time the quantity and price are entered, they must be multiplied
+		 *     and totaled up. Then, the program should calculate the discount obtained by the
+		 *      customer based on the total price. If the customer buys more than RM100, he/she
+		 *       is entitled to a 20% discount, whereas, if the total price is less than RM100
+		 *        the customer is only entitled to 10% discount. Finally, the program should
+		 *         display the total price before discount, discount received and the amount that
+		 *          needs to be paid.*/
+		 
+		double totalprice, itemprice, totalpriceitem1, totalpriceitem2, totalpriceitem3, discountprice, pricetopaid;
+		int numberofitem, quantity;
+		
+		Scanner scan = new Scanner (System.in);
+		
+		System.out.print("Enter the number of item: ");
+		numberofitem = scan.nextInt();
+		
+		if (numberofitem==1);
+		
+		System.out.println("Enter the price of the first item: ");
+		itemprice = scan.nextDouble();
+		
+		System.out.println("Enter the quantity of the first item: ");
+		quantity = scan.nextInt();
+		
+		totalpriceitem1 = itemprice*quantity;
+		System.out.println("The total of the first item is: " +totalpriceitem1);
+		
+		if (numberofitem<=2);
+		
+		System.out.print("Enter the price of the second item: ");
+		itemprice = scan.nextDouble();
+		
+		System.out.println("Enter the quantity of the second item: ");
+		quantity = scan.nextInt();
+		
+		totalpriceitem2 = itemprice*quantity;
+		System.out.println("The total price of the second item is: "+totalpriceitem2);
+		
+		if (numberofitem<=3);
+		
+		System.out.println("Enter the price of the third item: ");
+		itemprice = scan.nextDouble();
+		
+		System.out.println("Enter the quantity of the third item: ");
+		quantity = scan.nextInt();
+		
+		totalpriceitem3 = itemprice*quantity;
+		System.out.println("The total price of the third item is: "+totalpriceitem3);
+		
+		totalprice = totalpriceitem1 + totalpriceitem2 + totalpriceitem3;
+		System.out.println("Total price of the items is: "+totalprice);
+		
+		if (totalprice>=100) {
+			discountprice = totalprice - (totalprice*(20/100));
+			System.out.println("The discount received: " +discountprice);
+		
+		if (totalprice>100) {
+			discountprice = totalprice - (totalprice*(10/100));
+			System.out.println("The discount received: "+discountprice);
+			
+		
+			}
+		}
+
+	}
+
+}

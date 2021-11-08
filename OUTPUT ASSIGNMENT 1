@@ -1,8 +1,6 @@
-Enter the yearly interest rate: 
-3.5
-Enter the number of year as an integer: 
+Enter the  yearly interest rate: 3.5
+Enter the number of years as an integer: 
 5
-Enter the loan amount: 
-3000
-The sum of interest is: 525.00 
-The monthly payment is: 105.00
+Enter the loan amount: 3000
+The monthly payment is : $105.00
+The total payment is : $6300.00

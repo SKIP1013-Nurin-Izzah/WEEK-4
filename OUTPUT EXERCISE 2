@@ -1,0 +1,11 @@
+Using next integer(): 22
+Using next integer() increament by 1: 23
+Using next integer() increament by 5: 28
+Using next integer() mod 10: 8
+Enter double value: 
+33.33
+Using next double(): 33.33
+Using next double() decreament by 1: 34.33
+Using next double() decreament by 5: 29.33
+Using next double() mod 10: 9.329999999999998
+2.665812368628177E8
